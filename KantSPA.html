@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>康德動物醫院形象網站</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/myall.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <style>
+        .bg-cover{
+            background-position: center center;
+            background-size: cover;
+        }
+        .caption-text{
+            background-color: rgb(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- header section -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="text-end">
+                <a href="https://www.facebook.com/kantvet/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/kant.animalhospital/"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- nav section -->
+    <section>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><i class="fa-solid fa-shield-dog"></i></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">關於我們</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">門診時刻表</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">最新消息</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">案例分享</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          服務項目
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">24小時住院</a></li>
+                          <li><a class="dropdown-item" href="#">高壓氧</a></li>
+                          <li><a class="dropdown-item" href="#">全民血庫中心</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">聯絡我們</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                  </div>
+                </div>
+              </nav>
+        </div>   
+    </section>
+    <!-- carousel section -->
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item bg-cover active"
+                    style="background-image: url(./image/dog/pexels-jens-mahnke-776078.jpg); height: 90vh;">
+                    <div class="carousel-caption d-none d-md-block caption-text">
+                        <h3 class="fw-900 fw-bolder text-danger">醫療重症照護</h3>
+                        <p>24小時重症住院照護，時刻守護毛孩健康。</p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover"
+                    style="background-image: url(./image/dog/pexels-julissa-helmuth-3726314.jpg); height: 90vh;">
+                    <div class="carousel-caption d-none d-md-block caption-text">
+                        <h3 class="fw-900 fw-bolder text-danger">高壓氧</h3>
+                        <p>保健新選擇，促進康復。</p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover"
+                    style="background-image: url(./image/dog/pexels-pixabay-247937.jpg); height: 90vh;">
+                    <div class="carousel-caption d-none d-md-block caption-text">
+                        <h3 class="fw-900 fw-bolder text-danger">緊急手術團隊</h3>
+                        <p>由資深醫師帶領，管控手術風險</p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover"
+                    style="background-image: url(./image/dog/pexels-muhannad-alatawi-58997.jpg); height: 90vh;">
+                    <div class="carousel-caption d-none d-md-block caption-text">
+                        <h3 class="fw-900 fw-bolder text-danger">全民血庫中心聯合醫院</h3>
+                        <p>提供緊急需血的動物一個及時的協助。</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+</body>
+</html>

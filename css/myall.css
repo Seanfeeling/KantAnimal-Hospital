@@ -1,0 +1,50 @@
+:root {
+    --mycolor01: #DCC1B0;
+    --mycolor02: #869DAB;
+    --mycolor03: #847072;
+    --mycolor04: #3D313F;
+    --mybutton01: #AA641E;
+}
+
+/* 手機板以直式排版為主 使用時用table-RED*/
+@media (max-width:768px) {
+
+    /* 消除橫式標題後，改為區塊顯示，則變成直式排版 */
+    .table-RWD thead {
+        display: none;
+    }
+
+    .table-RWD tbody tr {
+        display: block;
+        border: 2px solid var(--mycolor01);
+        margin-top: 5px;
+    }
+
+    .table-RWD tbody tr td {
+        display: block;
+        overflow: hidden;
+        /* 版面跑掉時，整理版面用 */
+    }
+
+    /* 呼叫前方隱藏物件 */
+    .table-RWD tbody tr td::before {
+        content: attr(data-th);
+        color: brown;
+        font-weight: 600;
+        display: block;
+        float: left;
+        /* width: 20%; */
+        width: 6em;
+        padding-right: 1em;
+        /* 為了排版美觀 */
+        text-align: right;
+    }
+
+    .table-RWD tbody tr td span.table-col {
+        display: block;
+        float: left;
+        /* width: 80%; */
+        width: calc(100%-6em);
+        /* 右邊寬度扣除左邊設定之6em */
+    }
+}
