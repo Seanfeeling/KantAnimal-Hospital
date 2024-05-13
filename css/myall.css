@@ -5,6 +5,9 @@
     --mycolor04: #3D313F;
     --mybutton01: #AA641E;
 }
+.fw-900{
+    font-weight: 900;
+}
 
 /* 手機板以直式排版為主 使用時用table-RED*/
 @media (max-width:768px) {
